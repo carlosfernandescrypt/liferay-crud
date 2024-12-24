@@ -31,12 +31,12 @@ public class TodoPortlet extends MVCPortlet {
 		if (task != null && !task.trim().isEmpty()) {
 			tasks.add(task);
 		}
-		actionResponse.setRenderParameter("mvcPath", "/view.jsp"); // Redireciona para a view
+		actionResponse.setRenderParameter("mvcPath", "/view.jsp"); 
 	}
 
 	@Override
 	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-		renderRequest.setAttribute("tasks", tasks); // Passa a lista de tarefas para a view
-		super.doView(renderRequest, renderResponse); // Executa a renderização da página
+		renderRequest.setAttribute("tasks", tasks);
+		super.doView(renderRequest, renderResponse);
 	}
 }
