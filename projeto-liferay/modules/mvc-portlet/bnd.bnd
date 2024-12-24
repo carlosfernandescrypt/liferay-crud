@@ -1,0 +1,7 @@
+Bundle-Name: mvc-portlet
+Bundle-SymbolicName: com.todolist.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.todolist.portlet.constants
+Provide-Capability:\
+	liferay.language.resources;\
+		resource.bundle.base.name="content.Language"

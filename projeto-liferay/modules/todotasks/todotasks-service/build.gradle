@@ -1,0 +1,12 @@
+dependencies {
+	api project(":modules:todotasks:todotasks-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../todotasks-api/src/main/java"
+	testDir = "../todotasks-test/src/testIntegration/java"
+}
+
+group = "com.liferay.todo-list"
